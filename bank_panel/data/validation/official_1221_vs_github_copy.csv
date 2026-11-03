@@ -1,0 +1,24 @@
+sheet,variable,cells,pct_cells_equal_within_0.01,pct_cells_within_0.1pct,cells_only_in_official,cells_only_in_github,max_gap
+Major Balance Shee,Total Assets,4589,100.0,100.0,780,0,0.01
+Major Balance Shee,Total Deposits (a+b),4494,100.0,100.0,150,0,0.01
+Major Balance Shee,Total Borrowings,4478,100.0,100.0,151,0,0.01
+Major Balance Shee,Net Loans and Advances,4589,100.0,100.0,780,0,0.01
+Major Balance Shee,SLR/Approved Securities,3903,100.0,100.0,577,0,0.01
+Major Balance Shee,Cash Funds,4285,100.0,100.0,347,0,0.01
+Major Balance Shee,Reserves & Surplus,4578,100.0,100.0,726,0,0.01
+Major Balance Shee,i. Current Deposits,4349,100.0,100.0,105,0,0.01
+Major Balance Shee,ii. Savings Deposits,4148,100.0,100.0,390,0,0.01
+Asset Quality,1. Gross Advances,4589,100.0,100.0,780,0,0.01
+Asset Quality,8. Gross NPAs NPAs at the end of the,4471,100.0,100.0,908,0,0.01
+Asset Quality,15. Net NPAs,4471,100.0,100.0,864,0,0.01
+Asset Quality,12. Provisions for NPAs at end of th,4227,100.0,100.0,872,0,0.01
+Asset Quality,16. Net NPAs to Net Advances (%),4448,100.0,100.0,50,0,0.0
+Capital Adequacy,Tier I Capital-Standalone,3659,100.0,100.0,0,0,0.01
+Capital Adequacy,Common Equity Tier I Capital -Standa,3659,100.0,100.0,0,0,0.01
+Capital Adequacy,Total RWAs-Standalone (a+b+c),3659,100.0,100.0,0,0,0.01
+Capital Adequacy,Capital Ratio (CRAR)-Standalone,3659,100.0,100.0,0,0,0.0
+Profitability,3. Net Interest Income (NII) (April ,4579,100.0,100.0,728,0,0.01
+Profitability,16. Net Profit/Loss (PAT) (April to ,4579,100.0,100.0,728,0,0.01
+Performance Indica,Return on Total Assets (annualized),4500,100.0,100.0,0,0,0.0
+Major Sectoral,Retail Loans - Gross Advances,1946,100.0,100.0,0,0,0.01
+Priority-Non_Prior,Priority - MSE - Gross Advances,1948,100.0,100.0,0,0,0.01

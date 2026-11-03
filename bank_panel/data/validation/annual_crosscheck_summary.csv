@@ -1,0 +1,9 @@
+variable,bank_years_compared,median_abs_pct_gap,within_0.5pct,within_2pct,over_10pct
+gross_npa,431,0.0,95.1,97.2,2
+net_npa,430,0.0,84.4,91.4,18
+deposits,432,0.0,97.5,100.0,0
+borrowings,416,0.0,90.6,91.8,28
+investments,432,0.938,36.8,73.8,14
+net_advances,432,0.0,85.4,91.9,9
+crar,432,0.0,96.3,97.5,4
+tier1_ratio,431,0.0,97.2,97.7,3
