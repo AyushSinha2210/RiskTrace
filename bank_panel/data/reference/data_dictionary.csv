@@ -1,0 +1,44 @@
+﻿section,variable,unit,definition_or_formula,rbi_source (DBIE report 1221 table),cmie_prowessiq_item (confirm in your subscription),nse_bse_filing_or_other,notes,coverage_pct_of_panel
+A1,raw_total_assets,₹ crore,Total assets,Report 1221 T1: Total Assets,Total assets,Reg 33 results: balance sheet (half-yearly only),Off-site figure can exceed published accounts: SBI is 2.5% to 2.8% higher at Mar 2025 and Mar 2026. Internally it balances exactly.,100.0
+A2,raw_total_liabilities_ex_equity,₹ crore,Deposits + borrowings + other liabilities,T1: Total Deposits + Total Borrowings + Other Liabilities,Total liabilities less net worth,Reg 33 results: balance sheet,,100.0
+A3,raw_total_equity,₹ crore,Paid-up capital + reserves and surplus,T1: Paid-up Share Capital + Reserves and Surplus,Net worth,Reg 33 results: balance sheet,,100.0
+A4,raw_gross_advances,₹ crore,Gross loans and advances,T2: Gross Advances,Gross advances,Reg 33 results: notes; Pillar 3 DF-3,,100.0
+A5,raw_net_advances,₹ crore,Net advances after NPA provisions,T2: Net Advances (equals T1 net loans and advances on every row),Net advances,Reg 33 results: balance sheet,,100.0
+A6,raw_gross_npa,₹ crore,Gross NPAs at period end,T2: Gross NPAs at the end of the period,Gross NPA,Reg 33 results: notes; Pillar 3 DF-3,Matches RBI annual table for 95% of bank-years within 0.5%.,100.0
+A7,raw_net_npa,₹ crore,Net NPAs at period end,T2: Net NPAs,Net NPA,Reg 33 results: notes; Pillar 3 DF-3,"19 rows, mostly 2015, show net close to gross. They carry flag_net_npa_suspect and their ratios are blanked in the clean panel.",100.0
+A8a,raw_provisions_held,₹ crore,Stock of NPA provisions,T2: Provisions for NPAs at end of the FY (Mar 2015 on),Provisions for NPAs,Pillar 3 DF-3,"The brief merged a stock and a flow into one field, so they are split here.",89.8
+A8b,raw_gross_minus_net_npa,₹ crore,Gross NPA less net NPA,Derived,Derived,Derived,Not identical to provisions: net NPA also deducts items such as guarantee claims.,100.0
+A8c,raw_provision_charge_q,₹ crore,Single-quarter P&L risk provisions,"T4: Risk Provisions, Total, de-cumulated",Provisions and contingencies,Reg 33 results: P&L,,99.5
+A9,raw_cet1_capital,₹ crore,Common Equity Tier 1,T3: Common Equity Tier I Capital,Check availability in ProwessIQ,Pillar 3 DF-11 row 29,,99.7
+A10,raw_tier1_capital,₹ crore,Tier 1 capital,T3: Tier I Capital,Tier I capital,"Pillar 3 DF-2, DF-11",,99.7
+A11,raw_tier2_capital,₹ crore,Tier 2 capital,T3: Tier II Capital,Tier II capital,"Pillar 3 DF-2, DF-11",,99.7
+A12,raw_rwa,₹ crore,Total risk-weighted assets,T3: Total RWAs,Check availability in ProwessIQ,"Pillar 3 DF-2, DF-11 row 60",Quarter-end capital can reflect later events: Yes Bank Mar 2020 CRAR is 12.83 here against 8.46 in RBI annual table.,99.7
+A13,raw_total_deposits,₹ crore,Total deposits,T1: Total Deposits,Deposits,Reg 33 results: balance sheet,Median gap to RBI annual table is 0.00%.,100.0
+A14,raw_casa_deposits,₹ crore,Current + savings deposits,T1: Current Deposits + Savings Deposits,CASA deposits,Analyst presentation,,100.0
+A15,raw_bulk_wholesale_deposits,₹ crore,PROXY: certificates of deposit + deposits of banks,T1: Certificates of Deposits + Deposits of Banks,Not available,Not disclosed,True bulk deposits (above ₹2 or ₹3 crore) are not published bank by bank. raw_time_deposits is also supplied if you prefer the brief's proxy.,92.5
+A16,raw_borrowings,₹ crore,Total borrowings,T1: Total Borrowings,Borrowings,Reg 33 results: balance sheet,"All borrowings, wider than the brief's RBI LAF/MSF plus interbank. That split is not published by bank.",100.0
+A17,raw_slr_gsec_investments,₹ crore,SLR and approved securities,T1: SLR/Approved Securities,Government securities,Pillar 3 or annual report schedule 8,No HTM/AFS split in this report. raw_non_slr_investments is supplied.,100.0
+A18,raw_cash_and_rbi_balances,₹ crore,Cash funds + due from banks/FIs/CCPs,T1: Cash Funds + Due from Banks/FIs/CCPs,Cash and bank balances,Reg 33 results: balance sheet,,100.0
+A19,raw_net_interest_income,₹ crore,Single-quarter NII,"T4: Net Interest Income, de-cumulated",Net interest income,Reg 33 results: P&L,Source is April-to-date. Mar 2015 uses domestic operations for the difference.,99.7
+A20,raw_net_profit,₹ crore,Single-quarter profit after tax,"T4: Net Profit/Loss (PAT), de-cumulated",Profit after tax,Reg 33 results: P&L,Blank in a quarter after a missing quarter rather than guessed.,99.7
+A21a,raw_sec_infrastructure,₹ crore,"Infrastructure lending, domestic",T10: All Infrastructure,Check availability,Pillar 3 or annual report,RBI changed the infrastructure list in June 2022: see infra_definition.,99.7
+A21b,raw_sec_msme_priority,₹ crore,"Micro and small enterprises, priority sector",T9: Priority MSE gross advances,Check availability,Annual report,"Priority-sector MSE only, narrower than all MSME.",99.9
+A21c,raw_sec_retail,₹ crore,Retail loans,T8: Retail Loans gross advances,Check availability,Analyst presentation,"Retail in total, not unsecured retail, which is not published by bank.",99.8
+A21d,raw_sec_agriculture,₹ crore,Agriculture and allied,"T8, with T9 where T8 is missing",Check availability,Annual report,,99.9
+A21e,raw_sec_housing,₹ crore,Housing loans within retail,T8: Retail Loans - Housing Loans,Check availability,Analyst presentation,Closest quarterly real-estate measure. Commercial real estate is not published by bank each quarter; RBI annual table 8 gives real-estate exposure each March.,99.8
+A21f,raw_sec_industry / raw_sec_services,₹ crore,Industry and services,T8,Check availability,Annual report,"Added because they complete the vector. Industry starts Mar 2015. NBFC exposure is not in this report, so it is absent.",90.1
+B1,gnpa_ratio,%,100 × raw_gross_npa / raw_gross_advances,Compare with T2 ratio,,,Within 0.05 points of RBI's printed ratio on every row.,100.0
+B2,nnpa_ratio,%,100 × raw_net_npa / raw_net_advances,Compare with T2 ratio,,,Within 0.05 points on 99.0% of rows.,99.9
+B3,pcr_ratio,%,100 × (raw_gross_npa − raw_net_npa) / raw_gross_npa,T2 PCR differs: it adds back write-offs,,,Lower than RBI's write-off-adjusted PCR.,99.6
+B4,crar_ratio,%,100 × (raw_tier1_capital + raw_tier2_capital) / raw_rwa,Compare with T3 CRAR,,,Within 0.05 points on 99.7% of rows.,99.8
+B5,cet1_ratio,%,100 × raw_cet1_capital / raw_rwa,Compare with T3 CET1 ratio,,,Within 0.05 points on 99.7% of rows.,99.8
+B6,casa_ratio,%,100 × raw_casa_deposits / raw_total_deposits,,,,,100.0
+B7,cd_ratio,%,100 × raw_net_advances / raw_total_deposits,,,,,100.0
+B8,slr_liquidity_ratio,%,100 × (raw_cash_and_rbi_balances + raw_slr_gsec_investments) / raw_total_assets,,,,,100.0
+B9,roa_annualized,%,400 × raw_net_profit / mean(total assets at t and t−1),"T5 ROA is April-to-date, so it is not comparable",,,"Single-quarter, so far more volatile than rbi_roa_annualized.",99.8
+B10,nim_annualized,%,400 × raw_net_interest_income / mean(total assets at t and t−1),T5 NIM uses a different base,,,On total assets; about 0.3 points below rbi_nim_annualized at the median.,99.8
+C1,rbi_repo_rate,%,Repo rate in force at quarter end,Identical quarter-end path to BIS WS_CBPOL,,,"RBI policy announcements are the record. Dates from a public history, confirmed against BIS by month.",
+C2a,india_10y_gsec_yield,%,"10-year G-sec, quarterly average",,,FRED INDIRLTLT01STQ (OECD),"The ID in common use, IRLTLT01INM156N, could not be confirmed.",
+C2b,india_yield_curve_slope,pct pts,10Y quarterly average minus 91-day T-bill quarterly average,"DBIE report 307: Auctions of 91-Day GoI Treasury Bills, cut-off yield",,,"T-bill is the mean of that quarter's weekly auction cut-off yields. It is a primary-market yield, not a secondary-market one.",
+C3,india_real_gdp_yoy,%,"Real GDP YoY, within one base year",,,"MoSPI: base 2011-12 to Mar 2023, base 2022-23 after","Do not use FRED NGDPRNSAXDCINQ for YoY in FY2022-23: it joins the two bases at Apr 2022. Use india_real_gdp_yoy_lag1 as a feature, since GDP comes out about two months after quarter end.",
+C4,india_cpi_inflation,%,"CPI combined YoY, mean of the quarter's months",,,MoSPI 2024-base back-cast,FRED CPI for India stops in 2023.,
